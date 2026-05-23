@@ -291,6 +291,52 @@
 
     }
 
+/* SHOWCASE */
+
+.showcase{
+  padding:100px 10%;
+  background:#111827;
+}
+
+.showcase-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:30px;
+}
+
+.certificate-card{
+  background:#1e293b;
+  border-radius:20px;
+  overflow:hidden;
+  transition:0.4s;
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.certificate-card:hover{
+  transform:translateY(-10px);
+  border:1px solid #38bdf8;
+}
+
+.certificate-card img{
+  width:100%;
+  height:240px;
+  object-fit:cover;
+  display:block;
+}
+
+.certificate-info{
+  padding:20px;
+}
+
+.certificate-info h3{
+  color:#38bdf8;
+  margin-bottom:10px;
+}
+
+.certificate-info p{
+  color:#cbd5e1;
+  line-height:1.6;
+}
   </style>
 </head>
 
@@ -429,6 +475,53 @@
     </div>
 
   </section>
+  <!-- SHOWCASE -->
+
+<section class="showcase" id="showcase">
+
+  <h2 class="section-title">Showcase</h2>
+
+  <div class="showcase-container">
+
+    <!-- CERTIFICATE 1 -->
+    <div class="certificate-card">
+
+      <img src="C:\Users\Lenovo\Documents\ByteForge\Html, Css & JS.png" alt="HTML Certificate">
+
+      <div class="certificate-info">
+        <h3>HTML, CSS & JS Certificate</h3>
+        <p>Certified Web Development Course Completion.</p>
+      </div>
+
+    </div>
+
+    <!-- CERTIFICATE 2 -->
+    <div class="certificate-card">
+
+      <img src="images/javascript-certificate.jpg" alt="JavaScript Certificate">
+
+      <div class="certificate-info">
+        <h3>Coming Soon</h3>
+        <p>Professional Frontend Development Certification.</p>
+      </div>
+
+    </div>
+
+    <!-- CERTIFICATE 3 -->
+    <div class="certificate-card">
+
+      <img src="images/python-certificate.jpg" alt="Python Certificate">
+
+      <div class="certificate-info">
+        <h3>Coming Soon</h3>
+        <p>Certified Python Programming Course Completion.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
   <!-- ABOUT -->
 
